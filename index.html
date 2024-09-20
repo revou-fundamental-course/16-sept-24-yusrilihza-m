@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<font-></font-family>
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="RevoU\16-sept-24-yusrilihza-m\CSS\style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
+<body >
+
+    
+    <header class="main-header">
+        <!--logo-->
+        <div class="profile-icon" style=""></div>
+        <!--navigation-->
+        <nav>
+            <a href="#section-home">
+                <p><b>Home</b></p>
+            </a>
+            <a href="#section-ourprofile">
+                <p><b>Our Profile</b></p>
+            </a>
+            <a href="#section-portofolio">
+                <p><b>Portofolio</b></p>
+            </a>
+            <a href="#section-messageus">
+                <p><b>Message Us</b></p>
+            </a>
+        </nav>
+    </header>
+    <hr color="grey" height: 5px;>
+
+    <main>
+        <!-- home -->
+        <section id="section-home">
+            <header><h1 style="color: white;">Home</h1></header>
+            <article>
+                <head>
+                    <h1>Hi, Welcome To my website
+                        <p>Ini adalah website latihan pertama</p>
+                    </h1>
+                </head>
+                    <div class="photo-banner"></div>
+            </article>
+            <hr color="black"/>
+        </section>
+
+        <!--ourprofile-->
+        <section id="section-ourprofile">
+            <header>
+                <h1 style="color: black;">Our Profile</h1>
+            </header>
+            <div class="profile-icon-container">
+                <div>
+                    <div class="logo-icon"></div>
+                    <h5>Profile 1</h5>
+                </div>
+                <div>
+                    <div class="logo-icon"></div>
+                    <h5>Profile 2</h5>
+                </div>
+            </div>
+        </section>
+        <hr color="grey"/>
+
+        <!--portofolio-->
+        <section id="section-portofolio">
+            <header>
+                <h1 style="color: white;">Portofolio</h1>
+            </header>
+            <h3>Ini adalah portofolio saya</h3>
+        </section>
+            <hr color="grey"/>
+        <!--messageus-->
+
+        <section id="section-messageus">
+            <header>
+                <h1 style="color: white;">Message Us</h1>
+            </header>
+            <section>
+                <section>
+                    <!--form-->
+                    <form>
+                        <label for="Nama">Nama : </label>
+                        <input type="text" id="Nama" name="Nama">
+                    </form>
+                    <form>
+                        <label for="tanggal-lahir">Tanggal Lahir : </label>
+                        <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+                    </form>
+                    <form>
+                        <label for="jenis-kelamin">Jenis Kelamin</label>
+                        <input type="checkbox"  name="laki-laki" id="laki-laki">
+                        <label for="laki-laki"><h5>Laki-laki</h5></label>
+                        <input type="checkbox"  name="perempuan" id="perempuan">
+                        <label for="perempuan"><h5>Perempuan</h5></label>
+                    </form>
+                    <form>
+                        <label for="pesan">Pesan : </label>
+                        <textarea id="pesan" name="pesan" placeholder="Pesan"></textarea>
+                    </form>
+                    <input type="submit" value="Submit">
+                    
+                    </section>
+                    <!--result form-->
+                <div>
+                <textarea id="Lanjutan" name="lanjutan" placeholder="lanjutan" style="height: 310px; width: 500px;">lanjutan</textarea>                
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <hr color="grey"/>
+
+    <footer>
+        <p>Made by Yusril@2024</p>
+    </footer>
     
 </body>
 </html>
