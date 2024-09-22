@@ -1,5 +1,4 @@
 /* logo css */
-<<<<<<< HEAD
 *, html{
     padding: 0;
     margin: 0;
@@ -177,8 +176,7 @@ footer>p{
     height: 70px;
     color: rgb(255, 255, 255);
     text-align: right;
-=======
-
+}
 .main-header {
     display: flex;
 }
@@ -197,8 +195,4 @@ footer>p{
     height: 50px;
     background-color: aliceblue;
     ;
-}
-.photo-banner{
-
->>>>>>> 2c555f540265fc247d62192d910e00d5c1f96bf6
 }
