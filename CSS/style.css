@@ -1,5 +1,4 @@
 /* logo css */
-<<<<<<< HEAD
 *, html{
     padding: 0;
     margin: 0;
@@ -86,7 +85,7 @@ h3{
     height: 500px;
     width:500px;
     background-image: url(../Asset/IMG_20240921_233124.jpg);
-    border-radius: 700px;
+    border-radius: 500px;
     background-position-x: center;
     background-size: 800px;
 
@@ -99,6 +98,7 @@ div h5{
 .logo-icon{
     width: 100px;
     height: 100px;
+    border-radius: 100px;
     background-position: center; 
     background-size: cover ;
     background-image: url(../Asset/Foto\ RevoU.png);
@@ -177,28 +177,4 @@ footer>p{
     height: 70px;
     color: rgb(255, 255, 255);
     text-align: right;
-=======
-
-.main-header {
-    display: flex;
-}
-.nav {
-    display: flex;
-
-}
-
-.nav>a {
-    border: 1px solid;
-    padding: 8px;
-    color: black;
-}
-.logo-icon {
-    width: 50px;
-    height: 50px;
-    background-color: aliceblue;
-    ;
-}
-.photo-banner{
-
->>>>>>> 2c555f540265fc247d62192d910e00d5c1f96bf6
 }
