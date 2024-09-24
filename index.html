@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body >
-
-    
     <header class="main-header">
         <!--logo-->
         <div class="profile-icon"></div>
@@ -16,8 +14,8 @@
             <a href="#section-home">
                 <p><b>Home</b></p>
             </a>
-            <a href="#section-ourprofile">
-                <p><b>Our Profile</b></p>
+            <a href="#section-myprofile">
+                <p><b>My Profile</b></p>
             </a>
             <a href="#section-portofolio">
                 <p><b>Portofolio</b></p>
@@ -27,49 +25,78 @@
             </a>
         </nav>
     </header>
-    <hr color="grey" height: 5px;>
 
     <main>
+        
+            <div id="nama">    
+                <h3 id="nama">Masukkan nama anda</h3>
+                    <form name="nama-anda" onsubmit="return validateForm()">
+                        <input type="text" placeholder="Nama anda" name="name-input" id="name-input" required>
+                        <button id="submit" type="submit">Kirim</button>
+                        <p id="error-name"></p>
+                    </form>
+                </div>
+
         <!-- home -->
         <section id="section-home">
-            <header><h1 style="color: white;">Home</h1></header>
-            <article>
-                <head>
-                    <h1>Hi, Welcome To my website
-                        <p>Ini adalah website latihan pertama</p>
-                    </h1>
-                </head>
-                    <div class="photo-banner"></div>
-            </article>
-            <hr color="black"/>
-        </section>
-
-        <!--ourprofile-->
-        <section id="section-ourprofile">
             <header>
-                <h1 style="color: black;">Our Profile</h1>
+                <h2>Halo <span id="name"></span>Welcome To my website.
+                    Ini adalah website latihan pertama saya.
+                </h2>
+            </h2>
+                <script src="./JS/script.js"></script>
+            </header>
+            <article>
+                    <div class="photo-banner">
+                        <img class="myslides" src="./Asset/digital-art-style-river-nature-landscape.jpg" style="width:100%;">
+                        <img class="myslides" src="./Asset/beautiful-natural-landscape.jpg" style="width: 100%;">
+                        <img class="myslides" src="./Asset/mountainous-landscape-with-fog.jpg" style="width: 100%;">
+                        <script src="./JS/script.js">
+                        </script>
+                    </div>
+            </article>
+           
+        </section>
+    <hr color="white"/>
+
+        <!--myprofile-->
+        <section id="section-myprofile">
+            <header>
+                <h1 style="color: rgb(255, 255, 255);">My Profile</h1>
             </header>
             <div class="profile-icon-container">
                 <div>
                     <div class="logo-icon"></div>
-                    <h5>Profile 1</h5>
+                    <h5>Aku Yusril Ihza Mahendra, kelahiran Denpasar, Bali. Saat ini bertempat tinggal di Banyuwangi, Jawa Timur, Indonesia </h5>
                 </div>
                 <div>
-                    <div class="logo-icon"></div>
-                    <h5>Profile 2</h5>
+                    <div class="logo-icon2"></div>
+                    <h5>Mempunyai hobi di bidang fotografer, seni dan teknologi salah satu nya adalah ingin menjadi seorang programmer</h5>
+                </div>
+                <div>
+                    <div class="logo-icon3"></div>
+                    <h5>Untuk skill di bidang programmer saya sendiri masih pemula dan baru belajar. Saya berharap kita bisa bekerja sama saling tukar ilmu untuk menambah ilmu di bidang programmer</h5>
                 </div>
             </div>
         </section>
-        <hr color="grey"/>
+        <hr color="white"/>
 
         <!--portofolio-->
         <section id="section-portofolio">
             <header>
-                <h1 style="color: white;">Portofolio</h1>
+                <h1 style="color: rgb(0, 0, 0);">Portofolio</h1>
             </header>
-            <h3>Ini adalah portofolio saya</h3>
+            <div>
+                <div class="portofolio1"></div>
+            </div>
+            <div>
+                <div class="portofolio1"></div>
+            </div>
+            <div>
+                <div class="portofolio1"></div>
+            </div>
         </section>
-            <hr color="grey"/>
+            <hr color="white"/>
         <!--messageus-->
 
         <section id="section-messageus">
@@ -103,13 +130,15 @@
                     </section>
                     <!--result form-->
                 <div>
-                <textarea id="Lanjutan" name="lanjutan" placeholder="lanjutan" style="height: 310px; width: 500px;">lanjutan</textarea>                
+                <textarea id="Lanjutan" name="lanjutan" placeholder="lanjutan" style="height: 310px; width: 300px;">lanjutan</textarea>                
                 </div>
             </section>
         </section>
 
+        <!--responsive-->
+        <div class="clearfix"></div>
     </main>
-    <hr color="grey"/>
+    <hr color="white" style="height: 5px;"/>
 
     <footer>
         <p>Made by Yusril@2024</p>
