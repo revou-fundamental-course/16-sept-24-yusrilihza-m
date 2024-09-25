@@ -44,16 +44,17 @@
                     Ini adalah website latihan pertama saya.
                 </h2>
             </h2>
-                <script src="./JS/script.js"></script>
+            <script src="./JS/script.js"></script>
             </header>
             <article>
-                    <div class="photo-banner">
-                        <img class="myslides" src="./Asset/digital-art-style-river-nature-landscape.jpg" style="width:100%;">
-                        <img class="myslides" src="./Asset/beautiful-natural-landscape.jpg" style="width: 100%;">
-                        <img class="myslides" src="./Asset/mountainous-landscape-with-fog.jpg" style="width: 100%;">
-                        <script src="./JS/script.js">
-                        </script>
+                    <div class="photo-banner" class="">
+                        <img class="myslides" src="./Asset/18328.jpg" style="width:100%;">
+                        <img class="myslides" src="./Asset/22807.jpg" style="width: 100%;">
+                        <img class="myslides" src="./Asset/23299.jpg" style="width: 100%;">
+                        <img class="myslides" src="./Asset/33096.jpg" style="width: 100%;">
+                        <img class="myslides" src="./Asset/1.jpg" style="width: 100%;">
                     </div>
+                    <script src="./JS/script.js"></script>
             </article>
            
         </section>
@@ -100,43 +101,47 @@
         <!--messageus-->
 
         <section id="section-messageus">
+            
             <header>
                 <h1 style="color: white;">Message Us</h1>
             </header>
             <section>
                 <section>
                     <!--form-->
-                    <form>
-                        <label for="Nama">Nama : </label>
-                        <input type="text" id="Nama" name="Nama">
+                    <form name="message-form" onsubmit="return validateMessage()">
+                        <h3>Nama :<input placeholder="Nama" type="text" name="full-name" /></h3>
+                        <br />
+            
+                        <h3>Tanggal Lahir <input type="date" name="birth-date" /></h3>
+                        <br/>
+            
+                        <h3>Jenis Kelamin : 
+                        <input type="radio" id="male"  name="gender" value="male" />
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female"  name="gender" value="female" />
+                        <label for="female">Perempuan</label></h3>
+            
+                        <h3>Pesan : <textarea placeholder="Pesan" name="messages"></textarea></h3>
+                        <br/>
+            
+                        <input type="submit" value="submit" />
+                        <script src="./JS/script.js"></script>
                     </form>
-                    <form>
-                        <label for="tanggal-lahir">Tanggal Lahir : </label>
-                        <input type="date" id="tanggal-lahir" name="tanggal-lahir">
-                    </form>
-                    <form>
-                        <label for="jenis-kelamin">Jenis Kelamin</label>
-                        <input type="checkbox"  name="laki-laki" id="laki-laki">
-                        <label for="laki-laki"><h5>Laki-laki</h5></label>
-                        <input type="checkbox"  name="perempuan" id="perempuan">
-                        <label for="perempuan"><h5>Perempuan</h5></label>
-                    </form>
-                    <form>
-                        <label for="pesan">Pesan : </label>
-                        <textarea id="pesan" name="pesan" placeholder="Pesan"></textarea>
-                    </form>
-                    <input type="submit" value="Submit">
                     
                     </section>
                     <!--result form-->
-                <div>
-                <textarea id="Lanjutan" name="lanjutan" placeholder="lanjutan" style="height: 310px; width: 300px;">lanjutan</textarea>                
-                </div>
+                    <div>
+                        <h3>Nama : <span id="sender-full-name"></span></h3>
+                        <h3>Tanggal lahir : <span id="sender-birth-date"></span></h3>
+                        <h3>Jenis kelamin : <span id="sender-gender"></span></h3>
+                        <h3>Pesan : <span id="sender-messages"></span></h3>
+                    </div>
+                    <script src="./JS/script.js"></script>
             </section>
         </section>
 
         <!--responsive-->
-        <div class="clearfix"></div>
+        
     </main>
     <hr color="white" style="height: 5px;"/>
 
