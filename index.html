@@ -3,9 +3,9 @@
 <font-></font-family>
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body >
+<body id="background-tampilan">
     <header class="main-header">
         <!--logo-->
         <div class="profile-icon"></div>
@@ -27,7 +27,7 @@
     </header>
 
     <main>
-        
+        <div id="padding">
             <div id="nama">    
                 <h3 id="nama">Masukkan nama anda</h3>
                     <form name="nama-anda" onsubmit="return validateForm()">
@@ -39,71 +39,83 @@
 
         <!-- home -->
         <section id="section-home">
-            <header>
+            <header><h1>Home</h1></header>
+            <header id="sambutan">
                 <h2>Halo <span id="name"></span>Welcome To my website.
                     Ini adalah website latihan pertama saya.
                 </h2>
             </h2>
-            <script src="./JS/script.js"></script>
+            <script src="./js/script.js"></script>
             </header>
             <article>
-                    <div class="photo-banner" class="">
-                        <img class="myslides" src="./Asset/18328.jpg" style="width:100%;">
-                        <img class="myslides" src="./Asset/22807.jpg" style="width: 100%;">
-                        <img class="myslides" src="./Asset/23299.jpg" style="width: 100%;">
-                        <img class="myslides" src="./Asset/33096.jpg" style="width: 100%;">
-                        <img class="myslides" src="./Asset/1.jpg" style="width: 100%;">
+                    <div class="photo-banner">
+                        <img class="myslides" src="./asset/18328.jpg" style="width:100%;">
+                        <img class="myslides" src="./asset/2151839261.jpg" style="width: 100%;">
+                        <img class="myslides" src="./asset/22807.jpg" style="width: 100%;">
+                        <img class="myslides" src="./asset/23299.jpg" style="width: 100%;">
+                        <img class="myslides" src="./asset/33096.jpg" style="width: 100%;">
                     </div>
-                    <script src="./JS/script.js"></script>
+                    <script src="./js/script auto slide.js"></script>
             </article>
            
         </section>
-    <hr color="white"/>
 
         <!--myprofile-->
         <section id="section-myprofile">
             <header>
                 <h1 style="color: rgb(255, 255, 255);">My Profile</h1>
             </header>
+            
             <div class="profile-icon-container">
                 <div>
                     <div class="logo-icon"></div>
-                    <h5>Aku Yusril Ihza Mahendra, kelahiran Denpasar, Bali. Saat ini bertempat tinggal di Banyuwangi, Jawa Timur, Indonesia </h5>
+                    <p>Aku Yusril Ihza Mahendra, kelahiran Denpasar, Bali. Saat ini bertempat tinggal di Banyuwangi, Jawa Timur, Indonesia </p>
                 </div>
                 <div>
                     <div class="logo-icon2"></div>
-                    <h5>Mempunyai hobi di bidang fotografer, seni dan teknologi salah satu nya adalah ingin menjadi seorang programmer</h5>
+                    <p>Mempunyai hobi di bidang fotografer, seni dan teknologi salah satu nya adalah ingin menjadi seorang programmer</p>
                 </div>
                 <div>
                     <div class="logo-icon3"></div>
-                    <h5>Untuk skill di bidang programmer saya sendiri masih pemula dan baru belajar. Saya berharap kita bisa bekerja sama saling tukar ilmu untuk menambah ilmu di bidang programmer</h5>
+                    <p>Untuk skill di bidang programmer saya sendiri masih pemula dan baru belajar. Saya berharap kita bisa bekerja sama saling tukar ilmu untuk menambah ilmu di bidang programmer</p>
                 </div>
             </div>
         </section>
-        <hr color="white"/>
+        
 
         <!--portofolio-->
         <section id="section-portofolio">
             <header>
                 <h1 style="color: rgb(0, 0, 0);">Portofolio</h1>
             </header>
-            <div>
-                <div class="portofolio1"></div>
-            </div>
-            <div>
-                <div class="portofolio1"></div>
-            </div>
-            <div>
-                <div class="portofolio1"></div>
-            </div>
+            <p>Beberapa hasil foto pemandangan dari hobi saya, dengan menggunakan handphone</p>
+                <div class="photo-portofolio">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/ijen 1.jpg">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/ijen 2.jpg">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/ijen edit.jpg">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/pantai.jpg">
+                </div>
+                <p>Beberapa hasil foto random saya di jalanan</p>
+                <div class="photo-portofolio">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/gandrung.jpg">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/kedayunan.jpg">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/jalan valga.jpg">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/langitt subuh.jpg">
+                </div>
+                <p>Beberapa coding an saya untuk membuat website ini</p>
+                <div class="photo-portofolio">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/Screenshot 2024-09-26 163044.png">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/Screenshot 2024-09-26 163108.png">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/Screenshot 2024-09-26 163124.png">
+                    <img class="image-portofolio" src="./asset/foto porotoflio/Screenshot 2024-09-26 163832.png">
+                </div>
         </section>
-            <hr color="white"/>
         <!--messageus-->
 
         <section id="section-messageus">
             
             <header>
-                <h1 style="color: white;">Message Us</h1>
+                <h1 style="color: rgb(0, 0, 0);">Message Us</h1>
             </header>
             <section>
                 <section>
@@ -116,16 +128,16 @@
                         <br/>
             
                         <h3>Jenis Kelamin : 
-                        <input type="radio" id="male"  name="gender" value="male" />
+                        <input type="radio" id="male"  name="gender" value="Laki-laki" />
                         <label for="male">Laki-laki</label>
-                        <input type="radio" id="female"  name="gender" value="female" />
+                        <input type="radio" id="female"  name="gender" value="Perempuan" />
                         <label for="female">Perempuan</label></h3>
             
                         <h3>Pesan : <textarea placeholder="Pesan" name="messages"></textarea></h3>
                         <br/>
             
                         <input type="submit" value="submit" />
-                        <script src="./JS/script.js"></script>
+                        <script src="./js/script.js"></script>
                     </form>
                     
                     </section>
@@ -136,14 +148,11 @@
                         <h3>Jenis kelamin : <span id="sender-gender"></span></h3>
                         <h3>Pesan : <span id="sender-messages"></span></h3>
                     </div>
-                    <script src="./JS/script.js"></script>
+                    <script src="./js/script.js"></script>
             </section>
         </section>
-
-        <!--responsive-->
-        
+    </div>
     </main>
-    <hr color="white" style="height: 5px;"/>
 
     <footer>
         <p>Made by Yusril@2024</p>

@@ -1,6 +1,5 @@
-
 function validateForm() {
-  const nama = document.forms['nama-anda']['name-input'].value
+const nama = document.forms['nama-anda']['name-input'].value
 
   if (nama == ''){
     document.getElementById("error-name").innerHTML = "Tidak Boleh Kosong!"
@@ -17,6 +16,7 @@ function setName(name) {
 
   return false;
 }
+//validasi pesan messages us
 function validateMessage(){
   const name = document.forms["message-form"]["full-name"].value
   const birthdate = document.forms["message-form"]["birth-date"].value
@@ -24,7 +24,7 @@ function validateMessage(){
   const messages = document.forms["message-form"]["messages"].value
 
   if (name == "" || birthdate == "" || gender == "" || messages == ""){
-    alert("Tidak boleh kosong!");
+    alert("Tidak boleh ada kosong!");
     return false;
   }
 
@@ -37,17 +37,4 @@ function setSenderUI(name, birthdate, gender, messages){
   document.getElementById("sender-birth-date").innerHTML = birthdate;
   document.getElementById("sender-gender").innerHTML = gender;
   document.getElementById("sender-messages").innerHTML = messages;
-}
-var myIndex = 0;
-carousel();
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("myslides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000);
 }
